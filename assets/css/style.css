@@ -1,0 +1,18 @@
+#rules {
+    border: solid black 6px;
+}
+
+#titleRules {
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
