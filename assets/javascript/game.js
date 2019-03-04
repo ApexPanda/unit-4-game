@@ -15,35 +15,35 @@ $(document).ready(function () {
     $('#numberLosses').text(losses);
 
     //sets up random numbers for each TMNT
-    function fourRandomNumbers() {
+    function RandomNumbers() {
         for (var i = 0; i < 4; i++) {
             var num = Math.floor(Math.random() * 13 + 1);
             GeneratedNumbers.push(num);
         }
     }
-    fourRandomNumbers();
+    RandomNumbers();
 
     //resets the game
     function reset() {
         Random = Math.floor(Math.random()* 69 + 30);
         $('#number').text(Random);
         GeneratedNumbers = [];
-        fourRandomNumbers();
+        RandomNumbers();
         total = 0;
         $('#combined').text(total);
     }
 
     //adds the wins to the total
-    function sweet() {
-        alert("You won!!!");
+    function good() {
+        alert("You won!");
         wins++;
         $('#numberWins').text(wins);
         reset();
     }
 
     //adds the losses to the total
-    function yikes() {
-        alert("You lose!!");
+    function bad() {
+        alert("You lose!");
         losses++;
         $('#numberLosses').text(losses);
         reset();
@@ -56,10 +56,10 @@ $(document).ready(function () {
 
         //sets win/lose conditions
         if (total == Random) {
-            sweet();
+            good();
         }
         else if (total > Random) {
-            yikes();
+            bad();
         }
     })
 
@@ -69,10 +69,10 @@ $(document).ready(function () {
         
         //sets win/lose conditions
         if (total == Random) {
-            sweet();
+            good();
         }
         else if (total > Random) {
-            yikes();
+            bad();
         }
     })
 
@@ -82,10 +82,10 @@ $(document).ready(function () {
 
         //sets win/lose conditions
         if (total == Random) {
-            sweet();
+            good();
         }
         else if (total > Random) {
-            yikes();
+            bad();
         }
     })
 
@@ -95,10 +95,10 @@ $(document).ready(function () {
 
         //sets win/lose conditions
         if (total == Random) {
-            sweet();
+            good();
         }
         else if (total > Random) {
-            yikes();
+            bad();
         }
     });
 
