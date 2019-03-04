@@ -16,3 +16,11 @@ img {
     height: 100px;
     width: 100px;
 }
+
+.col-sm-6 {
+    font-size: x-large;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: solid white 2px;
+}
